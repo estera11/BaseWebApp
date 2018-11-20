@@ -20,7 +20,25 @@
   </button>
 
   <div id="doge-image"/>
+<form id="post-form" action="post" >
+  <div class="form-group">
+  <label for="new-post-title">
+    Post title...
+  </label>
+  <input type="text" id="new-post-title">
+</div>
 
+<div class="form-group">
+  <label for="new-post-body">
+    Post message...
+  </label>
+  <textarea rows="3" id="new-post-body"></textarea>
+</div>
+
+<button type="submit" class="btn btn-default" onclick="handleMessageFormSubmit()">
+  Add post
+</button>
+</form>
 </body>
 
 </html>
